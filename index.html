@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sweet Sisters Baking Co.</title>
+<title>Sweet Sisters Baking Co. - Contact</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@ body {
   font-size: 16px;
   width: 960px;
   margin: 0 auto;
- background-image: url("background.jpg");
+  background-image: url("background.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -21,6 +21,8 @@ body {
 h1 {
   font-family: "Oswald", sans-serif;
   text-align: center;
+  margin-top: 40px;
+  color: #fff;
 }
 
 ul {
@@ -35,21 +37,18 @@ ul {
 nav ul li a {
   text-decoration: none;
   color: #fff;
- 
-
 }
-  .navli-container { 
+.navli-container { 
   width: 920px;
   background-color: #C1CBD2;
   margin: 0px auto;
   padding: 20px;
-  }
+}
 
 nav ul li a:hover {
   background-color: #fff;
   color: #C1CBD2;
   border-radius: 10px;
- 
 }
 
 .logo-container {
@@ -73,36 +72,62 @@ nav ul li a:hover {
   margin: 0 auto;
   padding: 20px 0;
   background-color: #535864;
-    background-image: url("Title.png");
+  background-image: url("Title.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
 
 .nav-container ul li a {
   padding: 10px 15px;
   border-radius: 6px;
 }
 
-.container {
+.contact-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0px;
-  padding: 0px;
-  margin-bottom: 40px;
-}
-
-.container div {
-  background-color: #abd;
-  padding: 10px;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 40px 20px;
   color: #fff;
-  text-align: center;
 }
 
-.container img {
-  width: 100%;
-  height: auto;
+.contact-container div {
+  background-color: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container label {
+  margin: 10px 0 5px;
+}
+
+.contact-container input, 
+.contact-container textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contact-container button {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #C1CBD2;
+  color: #535864;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-container button:hover {
+  background-color: #fff;
+  color: #535864;
 }
 
 footer {
@@ -134,14 +159,42 @@ footer img {
   </div>
 
   <ul class="navli-container">
-    <li><a href=" https://lilbean050806-byte.github.io/Week6/">HOME</a></li>
+    <li><a href="https://lilbean050806-byte.github.io/Week6/">HOME</a></li>
     <li><a href="https://lilbean050806-byte.github.io/menu.html/">MENU</a></li>
-    <li><a href=" https://lilbean050806-byte.github.io/ABout/ ">ABOUT</a></li>
-    <li><a href=" https://lilbean050806-byte.github.io/Contact/">CONTACT</a></li>
+    <li><a href="https://lilbean050806-byte.github.io/ABout/">ABOUT</a></li>
+    <li><a href="https://lilbean050806-byte.github.io/Contact/">CONTACT</a></li>
   </ul>
 </nav>
 
+<h1>Contact Us</h1>
 
+<div class="contact-container">
+  <!-- Contact Info -->
+  <div>
+    <h2>CONTACT US AT</h2>
+    <p>Email: <a href="mailto:sweetsistersbakingco22@gmail.com" style="color:#fff;">sweetsistersbakingco22@gmail.com</a></p>
+    <p>Phone: (647) 331-2964</p>
+    <p>Instagram: <a href="https://www.instagram.com/sweetsisterbakingco" target="_blank" style="color:#fff;">@sweetsisterbakingco</a></p>
+    <p>YouTube: <a href="https://www.youtube.com/@Sweetsistersbakingco.22/shorts" target="_blank" style="color:#fff;">Sweetsister Baking Co. Shorts</a></p>
+  </div>
+
+  <!-- Contact Form -->
+  <div>
+    <h2>Send a Message</h2>
+    <form action="#" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
 
 <footer>
     &copy; 2022 Sweet Sisters Baking Co.
